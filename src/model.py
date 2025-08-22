@@ -9,4 +9,4 @@ if __name__ == "__main__":
     mileage = int(input("enter car mileage in KM to predict it's price: "))
 
     price = theta0 + theta1 * mileage
-    print(f"the price of the car is ~ {price}")
+    print(f"the price of the car is ~ {price:.2f}")

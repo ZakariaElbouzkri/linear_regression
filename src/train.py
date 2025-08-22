@@ -47,11 +47,11 @@ a = y_mean + (theta0 * y_std) - b * x_mean
 
 def save_thetas(filename="src/thetas.txt"):
     with open(filename, "w+") as f:
-        f.write(f"{a},{b}")
+        f.write(f"{a:.4f},{b:.4f}")
         print(f"results are saved in {filename}")
 
 
-print(f"θ0 (intercept) = {a:.4f}")
-print(f"θ1 (slope)     = {b:.4f}")
+print(f"θ0 (intercept) = {a:.2f}")
+print(f"θ1 (slope)     = {b:.2f}")
 
 save_thetas()
